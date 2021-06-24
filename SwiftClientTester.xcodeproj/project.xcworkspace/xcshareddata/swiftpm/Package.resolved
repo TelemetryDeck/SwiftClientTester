@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SwiftClient",
+        "repositoryURL": "/Users/bts/Repositories/SwiftClient",
+        "state": {
+          "branch": "feature/caching",
+          "revision": "35aaffa9b6e3eb9ec61f4fb143855eeb07d3612a",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
