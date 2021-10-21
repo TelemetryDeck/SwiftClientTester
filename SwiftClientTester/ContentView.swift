@@ -11,9 +11,9 @@ import TelemetryClient
 struct ContentView: View {
     var body: some View {
         VStack {
-            Text("Push this button to send 100 Boops!")
-            Button("100x Boop") {
-                for _ in 0 ..< 100 {
+            Text("Push this button to send 11 Boops!")
+            Button("11 Boop") {
+                for _ in 0 ..< 11 {
                     TelemetryManager.send("boop")
                 }
             }
