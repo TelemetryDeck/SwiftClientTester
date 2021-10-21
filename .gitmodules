@@ -1,0 +1,3 @@
+[submodule "SwiftClient"]
+	path = SwiftClient
+	url = git@github.com:TelemetryDeck/SwiftClient.git

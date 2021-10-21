@@ -18,8 +18,7 @@ struct SwiftClientTesterApp: App {
     
     init() {
         let configuration = TelemetryManagerConfiguration(
-            appID: "FA469AE1-1D1B-419D-B74C-0748C0325AFC",
-            sendSignalsInDebug: true
+            appID: "FA469AE1-1D1B-419D-B74C-0748C0325AFC"
         )
         
         TelemetryManager.initialize(with: configuration)

@@ -11,9 +11,9 @@
 		2B56EE1E2682052400049E66 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B56EE1D2682052400049E66 /* ContentView.swift */; };
 		2B56EE202682052500049E66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B56EE1F2682052500049E66 /* Assets.xcassets */; };
 		2B56EE232682052500049E66 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B56EE222682052500049E66 /* Preview Assets.xcassets */; };
-		2B56EE2B2682058C00049E66 /* TelemetryClient in Frameworks */ = {isa = PBXBuildFile; productRef = 2B56EE2A2682058C00049E66 /* TelemetryClient */; };
 		2B56EE2E26838F1900049E66 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B56EE2D26838F1900049E66 /* Info.plist */; };
 		2B56EE31268480FE00049E66 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B56EE30268480FE00049E66 /* NetworkExtension.framework */; };
+		2B77C9BE2721619E00D635C2 /* TelemetryClient in Frameworks */ = {isa = PBXBuildFile; productRef = 2B77C9BD2721619E00D635C2 /* TelemetryClient */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +25,7 @@
 		2B56EE2C268206E700049E66 /* SwiftClientTester.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftClientTester.entitlements; sourceTree = "<group>"; };
 		2B56EE2D26838F1900049E66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B56EE30268480FE00049E66 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		2B77C9BC272160FD00D635C2 /* SwiftClient */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SwiftClient; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,8 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B56EE2B2682058C00049E66 /* TelemetryClient in Frameworks */,
 				2B56EE31268480FE00049E66 /* NetworkExtension.framework in Frameworks */,
+				2B77C9BE2721619E00D635C2 /* TelemetryClient in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +44,7 @@
 		2B56EE0F2682052400049E66 = {
 			isa = PBXGroup;
 			children = (
+				2B77C9BC272160FD00D635C2 /* SwiftClient */,
 				2B56EE2D26838F1900049E66 /* Info.plist */,
 				2B56EE1A2682052400049E66 /* SwiftClientTester */,
 				2B56EE192682052400049E66 /* Products */,
@@ -103,7 +105,7 @@
 			);
 			name = SwiftClientTester;
 			packageProductDependencies = (
-				2B56EE2A2682058C00049E66 /* TelemetryClient */,
+				2B77C9BD2721619E00D635C2 /* TelemetryClient */,
 			);
 			productName = SwiftClientTester;
 			productReference = 2B56EE182682052400049E66 /* SwiftClientTester.app */;
@@ -134,7 +136,6 @@
 			);
 			mainGroup = 2B56EE0F2682052400049E66;
 			packageReferences = (
-				2B56EE292682058C00049E66 /* XCRemoteSwiftPackageReference "SwiftClient" */,
 			);
 			productRefGroup = 2B56EE192682052400049E66 /* Products */;
 			projectDirPath = "";
@@ -371,21 +372,9 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		2B56EE292682058C00049E66 /* XCRemoteSwiftPackageReference "SwiftClient" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "file:///Users/bts/Repositories/SwiftClient";
-			requirement = {
-				branch = feature/caching;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		2B56EE2A2682058C00049E66 /* TelemetryClient */ = {
+		2B77C9BD2721619E00D635C2 /* TelemetryClient */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2B56EE292682058C00049E66 /* XCRemoteSwiftPackageReference "SwiftClient" */;
 			productName = TelemetryClient;
 		};
 /* End XCSwiftPackageProductDependency section */
