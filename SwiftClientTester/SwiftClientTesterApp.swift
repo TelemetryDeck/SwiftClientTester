@@ -17,9 +17,8 @@ struct SwiftClientTesterApp: App {
     }
     
     init() {
-        let configuration = TelemetryManagerConfiguration(
-            appID: "FA469AE1-1D1B-419D-B74C-0748C0325AFC"
-        )
+        let configuration = TelemetryManagerConfiguration(appID: "FA469AE1-1D1B-419D-B74C-0748C0325AFC")
+        configuration.defaultUser = UUID().uuidString
         
         TelemetryManager.initialize(with: configuration)
         
