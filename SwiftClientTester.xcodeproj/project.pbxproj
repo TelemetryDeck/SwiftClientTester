@@ -30,6 +30,11 @@
 		2B77C9F8272170ED00D635C2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B77C9F7272170ED00D635C2 /* Preview Assets.xcassets */; };
 		2B77CA062721710800D635C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B56EE1D2682052400049E66 /* ContentView.swift */; };
 		2B77CA082721711600D635C2 /* TelemetryClient in Frameworks */ = {isa = PBXBuildFile; productRef = 2B77CA072721711600D635C2 /* TelemetryClient */; };
+		2B77CA142721721C00D635C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B77CA132721721C00D635C2 /* Assets.xcassets */; };
+		2B77CA172721721C00D635C2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B77CA162721721C00D635C2 /* Preview Assets.xcassets */; };
+		2B77CA1C2721722700D635C2 /* TelemetryClient in Frameworks */ = {isa = PBXBuildFile; productRef = 2B77CA1B2721722700D635C2 /* TelemetryClient */; };
+		2B77CA1D2721723000D635C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B56EE1D2682052400049E66 /* ContentView.swift */; };
+		2B77CA1E2721723A00D635C2 /* SwiftClientTesterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B56EE1B2682052400049E66 /* SwiftClientTesterApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +104,9 @@
 		2B77C9F7272170ED00D635C2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2B77C9F9272170ED00D635C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B77C9FA272170ED00D635C2 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		2B77CA0D2721721B00D635C2 /* TvSwiftClientTester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TvSwiftClientTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B77CA132721721C00D635C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B77CA162721721C00D635C2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +135,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2B77CA0A2721721B00D635C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B77CA1C2721722700D635C2 /* TelemetryClient in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -139,6 +155,7 @@
 				2B77C9C427216FCD00D635C2 /* iOSSwiftClientTester */,
 				2B77C9DE272170EB00D635C2 /* WatchSwiftClientTester WatchKit App */,
 				2B77C9E9272170EC00D635C2 /* WatchSwiftClientTester WatchKit Extension */,
+				2B77CA0E2721721B00D635C2 /* TvSwiftClientTester */,
 				2B56EE192682052400049E66 /* Products */,
 				2B56EE2F268480FE00049E66 /* Frameworks */,
 			);
@@ -152,6 +169,7 @@
 				2B77C9D7272170EB00D635C2 /* WatchSwiftClientTester.app */,
 				2B77C9DA272170EB00D635C2 /* WatchSwiftClientTester WatchKit App.app */,
 				2B77C9E5272170EC00D635C2 /* WatchSwiftClientTester WatchKit Extension.appex */,
+				2B77CA0D2721721B00D635C2 /* TvSwiftClientTester.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -228,6 +246,23 @@
 			isa = PBXGroup;
 			children = (
 				2B77C9F7272170ED00D635C2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2B77CA0E2721721B00D635C2 /* TvSwiftClientTester */ = {
+			isa = PBXGroup;
+			children = (
+				2B77CA132721721C00D635C2 /* Assets.xcassets */,
+				2B77CA152721721C00D635C2 /* Preview Content */,
+			);
+			path = TvSwiftClientTester;
+			sourceTree = "<group>";
+		};
+		2B77CA152721721C00D635C2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2B77CA162721721C00D635C2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -329,6 +364,26 @@
 			productReference = 2B77C9E5272170EC00D635C2 /* WatchSwiftClientTester WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
+		2B77CA0C2721721B00D635C2 /* TvSwiftClientTester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B77CA182721721C00D635C2 /* Build configuration list for PBXNativeTarget "TvSwiftClientTester" */;
+			buildPhases = (
+				2B77CA092721721B00D635C2 /* Sources */,
+				2B77CA0A2721721B00D635C2 /* Frameworks */,
+				2B77CA0B2721721B00D635C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TvSwiftClientTester;
+			packageProductDependencies = (
+				2B77CA1B2721722700D635C2 /* TelemetryClient */,
+			);
+			productName = TvSwiftClientTester;
+			productReference = 2B77CA0D2721721B00D635C2 /* TvSwiftClientTester.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -354,6 +409,9 @@
 					2B77C9E4272170EC00D635C2 = {
 						CreatedOnToolsVersion = 13.1;
 					};
+					2B77CA0C2721721B00D635C2 = {
+						CreatedOnToolsVersion = 13.1;
+					};
 				};
 			};
 			buildConfigurationList = 2B56EE132682052400049E66 /* Build configuration list for PBXProject "SwiftClientTester" */;
@@ -376,6 +434,7 @@
 				2B77C9D6272170EB00D635C2 /* WatchSwiftClientTester */,
 				2B77C9D9272170EB00D635C2 /* WatchSwiftClientTester WatchKit App */,
 				2B77C9E4272170EC00D635C2 /* WatchSwiftClientTester WatchKit Extension */,
+				2B77CA0C2721721B00D635C2 /* TvSwiftClientTester */,
 			);
 		};
 /* End PBXProject section */
@@ -424,6 +483,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2B77CA0B2721721B00D635C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B77CA172721721C00D635C2 /* Preview Assets.xcassets in Resources */,
+				2B77CA142721721C00D635C2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -454,6 +522,15 @@
 				2B77C9F3272170EC00D635C2 /* ComplicationController.swift in Sources */,
 				2B77C9EB272170EC00D635C2 /* SwiftClientTesterApp.swift in Sources */,
 				2B77C9F1272170EC00D635C2 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B77CA092721721B00D635C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B77CA1D2721723000D635C2 /* ContentView.swift in Sources */,
+				2B77CA1E2721723A00D635C2 /* SwiftClientTesterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -866,6 +943,65 @@
 			};
 			name = Release;
 		};
+		2B77CA192721721C00D635C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TvSwiftClientTester/Preview Content\"";
+				DEVELOPMENT_TEAM = FL4V655A94;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.breakthesystem.TvSwiftClientTester;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 15.0;
+			};
+			name = Debug;
+		};
+		2B77CA1A2721721C00D635C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TvSwiftClientTester/Preview Content\"";
+				DEVELOPMENT_TEAM = FL4V655A94;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.breakthesystem.TvSwiftClientTester;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 15.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -923,6 +1059,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		2B77CA182721721C00D635C2 /* Build configuration list for PBXNativeTarget "TvSwiftClientTester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B77CA192721721C00D635C2 /* Debug */,
+				2B77CA1A2721721C00D635C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -935,6 +1080,10 @@
 			productName = TelemetryClient;
 		};
 		2B77CA072721711600D635C2 /* TelemetryClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TelemetryClient;
+		};
+		2B77CA1B2721722700D635C2 /* TelemetryClient */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = TelemetryClient;
 		};
