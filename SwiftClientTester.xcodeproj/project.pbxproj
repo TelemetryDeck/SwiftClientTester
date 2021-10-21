@@ -14,6 +14,11 @@
 		2B56EE2E26838F1900049E66 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B56EE2D26838F1900049E66 /* Info.plist */; };
 		2B56EE31268480FE00049E66 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B56EE30268480FE00049E66 /* NetworkExtension.framework */; };
 		2B77C9BE2721619E00D635C2 /* TelemetryClient in Frameworks */ = {isa = PBXBuildFile; productRef = 2B77C9BD2721619E00D635C2 /* TelemetryClient */; };
+		2B77C9CA27216FCE00D635C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B77C9C927216FCE00D635C2 /* Assets.xcassets */; };
+		2B77C9CD27216FCE00D635C2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B77C9CC27216FCE00D635C2 /* Preview Assets.xcassets */; };
+		2B77C9D227216FE300D635C2 /* TelemetryClient in Frameworks */ = {isa = PBXBuildFile; productRef = 2B77C9D127216FE300D635C2 /* TelemetryClient */; };
+		2B77C9D327216FFA00D635C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B56EE1D2682052400049E66 /* ContentView.swift */; };
+		2B77C9D42721701000D635C2 /* SwiftClientTesterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B56EE1B2682052400049E66 /* SwiftClientTesterApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,9 @@
 		2B56EE2D26838F1900049E66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B56EE30268480FE00049E66 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		2B77C9BC272160FD00D635C2 /* SwiftClient */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SwiftClient; sourceTree = "<group>"; };
+		2B77C9C327216FCD00D635C2 /* iOSSwiftClientTester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSSwiftClientTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B77C9C927216FCE00D635C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B77C9CC27216FCE00D635C2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +46,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2B77C9C027216FCD00D635C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B77C9D227216FE300D635C2 /* TelemetryClient in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -47,6 +63,7 @@
 				2B77C9BC272160FD00D635C2 /* SwiftClient */,
 				2B56EE2D26838F1900049E66 /* Info.plist */,
 				2B56EE1A2682052400049E66 /* SwiftClientTester */,
+				2B77C9C427216FCD00D635C2 /* iOSSwiftClientTester */,
 				2B56EE192682052400049E66 /* Products */,
 				2B56EE2F268480FE00049E66 /* Frameworks */,
 			);
@@ -56,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				2B56EE182682052400049E66 /* SwiftClientTester.app */,
+				2B77C9C327216FCD00D635C2 /* iOSSwiftClientTester.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,6 +106,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2B77C9C427216FCD00D635C2 /* iOSSwiftClientTester */ = {
+			isa = PBXGroup;
+			children = (
+				2B77C9C927216FCE00D635C2 /* Assets.xcassets */,
+				2B77C9CB27216FCE00D635C2 /* Preview Content */,
+			);
+			path = iOSSwiftClientTester;
+			sourceTree = "<group>";
+		};
+		2B77C9CB27216FCE00D635C2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2B77C9CC27216FCE00D635C2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -111,6 +146,26 @@
 			productReference = 2B56EE182682052400049E66 /* SwiftClientTester.app */;
 			productType = "com.apple.product-type.application";
 		};
+		2B77C9C227216FCD00D635C2 /* iOSSwiftClientTester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B77C9CE27216FCE00D635C2 /* Build configuration list for PBXNativeTarget "iOSSwiftClientTester" */;
+			buildPhases = (
+				2B77C9BF27216FCD00D635C2 /* Sources */,
+				2B77C9C027216FCD00D635C2 /* Frameworks */,
+				2B77C9C127216FCD00D635C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSSwiftClientTester;
+			packageProductDependencies = (
+				2B77C9D127216FE300D635C2 /* TelemetryClient */,
+			);
+			productName = iOSSwiftClientTester;
+			productReference = 2B77C9C327216FCD00D635C2 /* iOSSwiftClientTester.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -118,11 +173,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1300;
+				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
 					2B56EE172682052400049E66 = {
 						CreatedOnToolsVersion = 13.0;
+					};
+					2B77C9C227216FCD00D635C2 = {
+						CreatedOnToolsVersion = 13.1;
 					};
 				};
 			};
@@ -142,6 +200,7 @@
 			projectRoot = "";
 			targets = (
 				2B56EE172682052400049E66 /* SwiftClientTester */,
+				2B77C9C227216FCD00D635C2 /* iOSSwiftClientTester */,
 			);
 		};
 /* End PBXProject section */
@@ -157,6 +216,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2B77C9C127216FCD00D635C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B77C9CD27216FCE00D635C2 /* Preview Assets.xcassets in Resources */,
+				2B77C9CA27216FCE00D635C2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -166,6 +234,15 @@
 			files = (
 				2B56EE1E2682052400049E66 /* ContentView.swift in Sources */,
 				2B56EE1C2682052400049E66 /* SwiftClientTesterApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B77C9BF27216FCD00D635C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B77C9D327216FFA00D635C2 /* ContentView.swift in Sources */,
+				2B77C9D42721701000D635C2 /* SwiftClientTesterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +426,71 @@
 			};
 			name = Release;
 		};
+		2B77C9CF27216FCE00D635C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iOSSwiftClientTester/Preview Content\"";
+				DEVELOPMENT_TEAM = FL4V655A94;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.breakthesystem.iOSSwiftClientTester;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2B77C9D027216FCE00D635C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iOSSwiftClientTester/Preview Content\"";
+				DEVELOPMENT_TEAM = FL4V655A94;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.breakthesystem.iOSSwiftClientTester;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -370,10 +512,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		2B77C9CE27216FCE00D635C2 /* Build configuration list for PBXNativeTarget "iOSSwiftClientTester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B77C9CF27216FCE00D635C2 /* Debug */,
+				2B77C9D027216FCE00D635C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		2B77C9BD2721619E00D635C2 /* TelemetryClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TelemetryClient;
+		};
+		2B77C9D127216FE300D635C2 /* TelemetryClient */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = TelemetryClient;
 		};
